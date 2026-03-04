@@ -585,7 +585,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                   className="w-16 h-16 object-contain"
                 />
               </div>
-              <p className="text-sm leading-relaxed text-gray-400 font-light">
+              <p className="text-sm leading-relaxed text-gray-400 font-semibold">
                 Revolutionizing e-commerce and creating economic opportunities
                 across Africa.
               </p>
@@ -621,7 +621,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Customer
                   </a>
@@ -629,7 +629,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Merchant
                   </a>
@@ -637,7 +637,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Driver
                   </a>
@@ -654,7 +654,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     About Us
                   </a>
@@ -662,7 +662,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Blog
                   </a>
@@ -670,7 +670,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Careers
                   </a>
@@ -678,7 +678,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Press
                   </a>
@@ -695,7 +695,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Privacy Policy
                   </a>
@@ -703,7 +703,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Terms of Service
                   </a>
@@ -711,7 +711,7 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
                   >
                     Cookie Policy
                   </a>
@@ -752,10 +752,10 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
 
           {/* Bottom Footer */}
           <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between">
-            <p className="text-sm text-gray-500 text-center md:text-left font-light">
+            <p className="text-sm text-gray-500 text-center md:text-left font-semibold">
               &copy; 2026 SIMBA Express. All rights reserved.
             </p>
-            <div className="flex gap-6 justify-center md:justify-end mt-6 md:mt-0 text-sm text-gray-500 font-light">
+            <div className="flex gap-6 justify-center md:justify-end mt-6 md:mt-0 text-sm text-gray-500 font-semibold">
               <a href="#" className="hover:text-red-500 transition-colors">
                 Privacy
               </a>
