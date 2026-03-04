@@ -3,11 +3,28 @@ import LandingPage from "./components/LandingPage";
 
 function App() {
   const [currentPage, setCurrentPage] = useState<
-    "home" | "about" | "career" | "press" | "support"
+    | "home"
+    | "about"
+    | "career"
+    | "press"
+    | "support"
+    | "customer-app"
+    | "merchant-app"
+    | "driver-app"
   >("home");
 
   const handleNavigate = (path: string) => {
-    if (["about", "career", "press", "support"].includes(path)) {
+    if (
+      [
+        "about",
+        "career",
+        "press",
+        "support",
+        "customer-app",
+        "merchant-app",
+        "driver-app",
+      ].includes(path)
+    ) {
       setCurrentPage(path as any);
       window.scrollTo(0, 0);
     } else if (path === "home") {

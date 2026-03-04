@@ -290,7 +290,7 @@ const LandingPage: React.FC<{
                       className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 hover:shadow-lg transition-all flex items-center justify-center gap-2 group/btn"
                     >
                       <ShoppingCart size={18} />
-                      Explore App
+                      Shop Now
                     </button>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ const LandingPage: React.FC<{
                       className="w-full py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700 hover:shadow-lg transition-all flex items-center justify-center gap-2"
                     >
                       <Store size={18} />
-                      Explore App
+                      Become a Merchant
                     </button>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ const LandingPage: React.FC<{
                       className="w-full py-3 bg-orange-600 text-white rounded-xl font-semibold hover:bg-orange-700 hover:shadow-lg transition-all flex items-center justify-center gap-2"
                     >
                       <Truck size={18} />
-                      Explore App
+                      Start Delivering
                     </button>
                   </div>
                 </div>
