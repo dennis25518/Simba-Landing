@@ -29,36 +29,36 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
               />
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#features"
-                className="text-black font-bold hover:text-red-600 transition"
+              <button
+                onClick={() => onNavigate("home")}
+                className="text-black font-bold hover:text-red-600 transition cursor-pointer"
               >
                 Home
-              </a>
-              <a
-                href="#apps"
-                className="text-black font-bold hover:text-red-600 transition"
+              </button>
+              <button
+                onClick={() => onNavigate("about")}
+                className="text-black font-bold hover:text-red-600 transition cursor-pointer"
               >
                 About
-              </a>
-              <a
-                href="#impact"
-                className="text-black font-bold hover:text-red-600 transition"
+              </button>
+              <button
+                onClick={() => onNavigate("career")}
+                className="text-black font-bold hover:text-red-600 transition cursor-pointer"
               >
                 Career
-              </a>
-              <a
-                href="#impact"
-                className="text-black font-bold hover:text-red-600 transition"
+              </button>
+              <button
+                onClick={() => onNavigate("press")}
+                className="text-black font-bold hover:text-red-600 transition cursor-pointer"
               >
                 Press
-              </a>
-              <a
-                href="#impact"
-                className="text-black font-bold hover:text-red-600 transition"
+              </button>
+              <button
+                onClick={() => onNavigate("support")}
+                className="text-black font-bold hover:text-red-600 transition cursor-pointer"
               >
                 Support
-              </a>
+              </button>
               <button
                 onClick={() => onNavigate("user-app")}
                 className="px-6 py-2 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition"
