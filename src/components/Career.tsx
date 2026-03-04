@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  ArrowLeft,
   Briefcase,
   MapPin,
   Users,
@@ -10,9 +9,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 
-const Career: React.FC<{ onNavigate: (path: string) => void }> = ({
-  onNavigate,
-}) => {
+const Career: React.FC = () => {
   const jobOpenings = [
     {
       title: "Senior Backend Engineer",
@@ -53,22 +50,7 @@ const Career: React.FC<{ onNavigate: (path: string) => void }> = ({
   ];
 
   return (
-    <div className="bg-white min-h-screen">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center">
-            <button
-              onClick={() => onNavigate("home")}
-              className="flex items-center gap-2 text-gray-700 hover:text-red-600 transition-colors"
-            >
-              <ArrowLeft size={20} />
-              <span className="font-semibold">Back to Home</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -207,22 +189,6 @@ const Career: React.FC<{ onNavigate: (path: string) => void }> = ({
               something that will impact millions of people across Africa.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600 text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Don't see a fit yet?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Send us your resume and let's explore opportunities together
-          </p>
-          <button
-            onClick={() => onNavigate("support")}
-            className="px-8 py-4 bg-white text-red-600 font-bold rounded-lg hover:bg-gray-100 transition-all"
-          >
-            Get in Touch
-          </button>
         </div>
       </section>
     </div>

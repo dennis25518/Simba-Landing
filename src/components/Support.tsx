@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  ArrowLeft,
   Phone,
   Mail,
   MapPin,
@@ -10,9 +9,7 @@ import {
   Send,
 } from "lucide-react";
 
-const Support: React.FC<{ onNavigate: (path: string) => void }> = ({
-  onNavigate,
-}) => {
+const Support: React.FC = () => {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -54,22 +51,7 @@ const Support: React.FC<{ onNavigate: (path: string) => void }> = ({
   ];
 
   return (
-    <div className="bg-white min-h-screen">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center">
-            <button
-              onClick={() => onNavigate("home")}
-              className="flex items-center gap-2 text-gray-700 hover:text-red-600 transition-colors"
-            >
-              <ArrowLeft size={20} />
-              <span className="font-semibold">Back to Home</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

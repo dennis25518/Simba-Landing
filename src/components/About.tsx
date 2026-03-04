@@ -1,34 +1,9 @@
 import React from "react";
-import {
-  ArrowLeft,
-  Target,
-  Heart,
-  Users,
-  Zap,
-  Globe,
-  TrendingUp,
-} from "lucide-react";
+import { Target, Heart, Users, Zap, Globe, TrendingUp } from "lucide-react";
 
-const About: React.FC<{ onNavigate: (path: string) => void }> = ({
-  onNavigate,
-}) => {
+const About: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center">
-            <button
-              onClick={() => onNavigate("home")}
-              className="flex items-center gap-2 text-gray-700 hover:text-red-600 transition-colors"
-            >
-              <ArrowLeft size={20} />
-              <span className="font-semibold">Back to Home</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -202,30 +177,6 @@ const About: React.FC<{ onNavigate: (path: string) => void }> = ({
                 <p className="text-gray-600">{milestone.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer CTA */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600 text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Join Us?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Be part of Africa's commerce revolution
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => onNavigate("career")}
-              className="px-8 py-4 bg-white text-red-600 font-bold rounded-lg hover:bg-gray-100 transition-all"
-            >
-              View Careers
-            </button>
-            <button
-              onClick={() => onNavigate("support")}
-              className="px-8 py-4 bg-white/20 border-2 border-white text-white font-bold rounded-lg hover:bg-white/30 transition-all"
-            >
-              Get in Touch
-            </button>
           </div>
         </div>
       </section>

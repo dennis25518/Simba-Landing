@@ -1,16 +1,7 @@
 import React from "react";
-import {
-  ArrowLeft,
-  Newspaper,
-  Calendar,
-  ExternalLink,
-  Download,
-  Mail,
-} from "lucide-react";
+import { Calendar, ExternalLink, Download, Mail } from "lucide-react";
 
-const Press: React.FC<{ onNavigate: (path: string) => void }> = ({
-  onNavigate,
-}) => {
+const Press: React.FC = () => {
   const pressReleases = [
     {
       title: "SIMBA Express Reaches 1 Million Customers Milestone",
@@ -43,22 +34,7 @@ const Press: React.FC<{ onNavigate: (path: string) => void }> = ({
   ];
 
   return (
-    <div className="bg-white min-h-screen">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center">
-            <button
-              onClick={() => onNavigate("home")}
-              className="flex items-center gap-2 text-gray-700 hover:text-red-600 transition-colors"
-            >
-              <ArrowLeft size={20} />
-              <span className="font-semibold">Back to Home</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -207,27 +183,6 @@ const Press: React.FC<{ onNavigate: (path: string) => void }> = ({
                 {publication}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600 text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Newspaper className="w-16 h-16 mx-auto mb-6" />
-          <h2 className="text-4xl font-bold mb-6">Get Press Updates</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Subscribe to our press release mailing list for the latest news
-          </p>
-          <div className="flex gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1 px-6 py-3 rounded-lg text-gray-900 font-semibold focus:outline-none"
-            />
-            <button className="px-6 py-3 bg-white text-red-600 font-bold rounded-lg hover:bg-gray-100 transition-all">
-              Subscribe
-            </button>
           </div>
         </div>
       </section>
