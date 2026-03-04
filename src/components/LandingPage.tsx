@@ -572,79 +572,200 @@ const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
+      <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center">
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
+            {/* Brand Section */}
+            <div className="md:col-span-1">
+              <div className="flex items-center mb-4">
                 <img
                   src="/simba-logo.png"
                   alt="SIMBA"
-                  className="w-40 h-40 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </div>
-              <p className="text-sm">Revolutionizing e-commerce in Africa.</p>
+              <p className="text-sm leading-relaxed text-gray-400 font-light">
+                Revolutionizing e-commerce and creating economic opportunities
+                across Africa.
+              </p>
+              {/* Social Links */}
+              <div className="flex gap-4 mt-6">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors duration-300 group"
+                >
+                  <span className="text-lg group-hover:text-white">f</span>
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors duration-300 group"
+                >
+                  <span className="text-lg group-hover:text-white">𝕏</span>
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-gray-800 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors duration-300 group"
+                >
+                  <span className="text-lg group-hover:text-white">in</span>
+                </a>
+              </div>
             </div>
+
+            {/* Apps */}
             <div>
-              <h4 className="text-white font-bold mb-4">Apps</h4>
-              <ul className="space-y-2 text-sm">
+              <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">
+                Apps
+              </h4>
+              <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
                     Customer
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
                     Merchant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
                     Driver
                   </a>
                 </li>
               </ul>
             </div>
+
+            {/* Company */}
             <div>
-              <h4 className="text-white font-bold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
+              <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">
+                Company
+              </h4>
+              <ul className="space-y-3">
                 <li>
-                  <a href="#" className="hover:text-white transition">
-                    About
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
+                    About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
                     Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
+                    Press
                   </a>
                 </li>
               </ul>
             </div>
+
+            {/* Legal */}
             <div>
-              <h4 className="text-white font-bold mb-4">Contact</h4>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" /> +255 685 636 220
+              <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">
+                Legal
+              </h4>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
+                    Privacy Policy
+                  </a>
                 </li>
-                <li className="flex items-center gap-2">
-                  <Mail className="w-4 h-4" /> support@simbaxp.com
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
+                    Terms of Service
+                  </a>
                 </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" /> Tanzania
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-light"
+                  >
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">
+                Contact
+              </h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start gap-3 group">
+                  <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-red-500 group-hover:text-red-400 transition-colors" />
+                  <span className="text-gray-400 group-hover:text-white transition-colors">
+                    +255 685 636 220
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 group">
+                  <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-red-500 group-hover:text-red-400 transition-colors" />
+                  <span className="text-gray-400 group-hover:text-white transition-colors">
+                    support@simbaxp.com
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 group">
+                  <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-red-500 group-hover:text-red-400 transition-colors" />
+                  <span className="text-gray-400 group-hover:text-white transition-colors">
+                    Dar es Salaam, Tanzania
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>
-              &copy; 2026 SIMBA Express. All rights reserved. Revolutionizing
-              e-commerce in Africa.
+
+          {/* Divider */}
+          <div className="border-t border-gray-800"></div>
+
+          {/* Bottom Footer */}
+          <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-gray-500 text-center md:text-left font-light">
+              &copy; 2026 SIMBA Express. All rights reserved.
             </p>
+            <div className="flex gap-6 justify-center md:justify-end mt-6 md:mt-0 text-sm text-gray-500 font-light">
+              <a href="#" className="hover:text-red-500 transition-colors">
+                Privacy
+              </a>
+              <a href="#" className="hover:text-red-500 transition-colors">
+                Terms
+              </a>
+              <a href="#" className="hover:text-red-500 transition-colors">
+                Sitemap
+              </a>
+            </div>
           </div>
         </div>
       </footer>
