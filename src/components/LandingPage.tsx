@@ -15,10 +15,21 @@ import About from "./About";
 import Career from "./Career";
 import Press from "./Press";
 import Support from "./Support";
+import CustomerApp from "./CustomerApp";
+import MerchantApp from "./MerchantApp";
+import DriverApp from "./DriverApp";
 
 const LandingPage: React.FC<{
   onNavigate: (path: string) => void;
-  currentPage: "home" | "about" | "career" | "press" | "support";
+  currentPage:
+    | "home"
+    | "about"
+    | "career"
+    | "press"
+    | "support"
+    | "customer-app"
+    | "merchant-app"
+    | "driver-app";
 }> = ({ onNavigate, currentPage }) => {
   return (
     <div className="bg-white">
@@ -275,13 +286,11 @@ const LandingPage: React.FC<{
                       </li>
                     </ul>
                     <button
-                      onClick={() =>
-                        (window.location.href = "https://simbaxp.vercel.app")
-                      }
+                      onClick={() => onNavigate("customer-app")}
                       className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 hover:shadow-lg transition-all flex items-center justify-center gap-2 group/btn"
                     >
                       <ShoppingCart size={18} />
-                      Shop Now
+                      Explore App
                     </button>
                   </div>
                 </div>
@@ -324,14 +333,11 @@ const LandingPage: React.FC<{
                       </li>
                     </ul>
                     <button
-                      onClick={() =>
-                        (window.location.href =
-                          "https://merchant.simbaxp.vercel.app")
-                      }
+                      onClick={() => onNavigate("merchant-app")}
                       className="w-full py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700 hover:shadow-lg transition-all flex items-center justify-center gap-2"
                     >
                       <Store size={18} />
-                      Become a Merchant
+                      Explore App
                     </button>
                   </div>
                 </div>
@@ -374,14 +380,11 @@ const LandingPage: React.FC<{
                       </li>
                     </ul>
                     <button
-                      onClick={() =>
-                        (window.location.href =
-                          "https://driver.simbaxp.vercel.app")
-                      }
+                      onClick={() => onNavigate("driver-app")}
                       className="w-full py-3 bg-orange-600 text-white rounded-xl font-semibold hover:bg-orange-700 hover:shadow-lg transition-all flex items-center justify-center gap-2"
                     >
                       <Truck size={18} />
-                      Start Delivering
+                      Explore App
                     </button>
                   </div>
                 </div>
@@ -596,6 +599,9 @@ const LandingPage: React.FC<{
       {currentPage === "career" && <Career />}
       {currentPage === "press" && <Press />}
       {currentPage === "support" && <Support />}
+      {currentPage === "customer-app" && <CustomerApp />}
+      {currentPage === "merchant-app" && <MerchantApp />}
+      {currentPage === "driver-app" && <DriverApp />}
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 border-t border-gray-800">
