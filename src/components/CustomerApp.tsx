@@ -33,6 +33,132 @@ const CustomerApp: React.FC = () => {
         </div>
       </section>
 
+      {/* Products Marquee Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            Hundreds of <span className="text-red-600">products</span>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Replacing daily orders to many suppliers with a single order placed
+            through one platform.
+          </p>
+        </div>
+
+        {/* Scrolling Products Banner */}
+        <div
+          style={{
+            width: "100%",
+            overflow: "hidden",
+            background: "white",
+            paddingBottom: "2rem",
+          }}
+        >
+          <style>{`
+            @keyframes marquee-scroll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .marquee {
+              display: flex;
+              gap: 2rem;
+              animation: marquee-scroll 50s linear infinite;
+            }
+            .marquee-product {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 0.75rem;
+              flex-shrink: 0;
+              width: 140px;
+            }
+            .marquee-product img {
+              height: 140px;
+              width: 140px;
+              object-fit: contain;
+              background: #f9fafb;
+              padding: 1rem;
+              border-radius: 0.5rem;
+            }
+            .marquee-product span {
+              font-weight: 700;
+              font-size: 0.75rem;
+              text-align: center;
+              color: #1f2937;
+              width: 100%;
+            }
+          `}</style>
+
+          <div className="marquee">
+            <div className="marquee-product">
+              <img src="/Uf_glass_mango.png" alt="Mango Juice" />
+              <span>MANGO JUICE</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/bwanasukari-removebg.png" alt="Bwana Sukari" />
+              <span>BWANA SUKARI</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Energy%20Can.png" alt="Energy Can" />
+              <span>ENERGY CAN</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Fursana.png" alt="Fursana" />
+              <span>FURSANA</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/guava.png" alt="Guava Juice" />
+              <span>GUAVA JUICE</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Juicy%20fruty.png" alt="Juicy Fruity" />
+              <span>JUICY FRUITY</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/kisima%20water.png" alt="Kisima Water" />
+              <span>KISIMA WATER</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Punch%20Can.png" alt="Punch" />
+              <span>PUNCH</span>
+            </div>
+
+            <div className="marquee-product">
+              <img src="/Uf_glass_mango.png" alt="Mango Juice" />
+              <span>MANGO JUICE</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/bwanasukari-removebg.png" alt="Bwana Sukari" />
+              <span>BWANA SUKARI</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Energy%20Can.png" alt="Energy Can" />
+              <span>ENERGY CAN</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Fursana.png" alt="Fursana" />
+              <span>FURSANA</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/guava.png" alt="Guava Juice" />
+              <span>GUAVA JUICE</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Juicy%20fruty.png" alt="Juicy Fruity" />
+              <span>JUICY FRUITY</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/kisima%20water.png" alt="Kisima Water" />
+              <span>KISIMA WATER</span>
+            </div>
+            <div className="marquee-product">
+              <img src="/Punch%20Can.png" alt="Punch" />
+              <span>PUNCH</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
