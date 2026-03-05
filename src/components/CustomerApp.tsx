@@ -212,7 +212,7 @@ const CustomerApp: React.FC = () => {
                 </ul>
                 <button
                   onClick={() =>
-                    (window.location.href = "https://simba-xp.vercel.app/")
+                    window.open("https://simba-xp.vercel.app/", "_blank")
                   }
                   className="w-full px-6 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl"
                 >
