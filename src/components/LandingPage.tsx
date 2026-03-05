@@ -116,7 +116,7 @@ const LandingPage: React.FC<{
 
             {/* Slide-in Menu from Right */}
             <div
-              className="md:hidden fixed right-0 top-0 h-full w-72 bg-white shadow-2xl z-50 flex flex-col transform transition-transform duration-300"
+              className="md:hidden fixed right-0 top-0 min-h-screen w-72 bg-gradient-to-b from-red-50 via-white to-red-50 shadow-2xl z-50 flex flex-col transform transition-transform duration-300 overflow-y-auto"
               style={{ animation: "slideInRight 0.3s ease-out" }}
             >
               <style>{`
@@ -131,24 +131,24 @@ const LandingPage: React.FC<{
               `}</style>
 
               {/* Menu Header with Close Button */}
-              <div className="flex items-center justify-between p-4 border-b border-gray-200">
-                <h2 className="text-xl font-bold text-gray-900">Menu</h2>
+              <div className="flex items-center justify-between p-4 border-b border-red-200 bg-gradient-to-r from-red-600 to-red-500 sticky top-0 z-10">
+                <h2 className="text-xl font-bold text-white">Menu</h2>
                 <button
                   onClick={closeMenu}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition"
+                  className="p-2 hover:bg-red-700 rounded-lg transition text-white"
                 >
-                  <X className="w-6 h-6 text-black" />
+                  <X className="w-6 h-6" />
                 </button>
               </div>
 
               {/* Menu Items */}
-              <div className="flex-1 overflow-y-auto p-6 space-y-2">
+              <div className="flex-1 p-6 space-y-3">
                 <button
                   onClick={() => {
                     onNavigate("home");
                     closeMenu();
                   }}
-                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-100 rounded-lg transition"
                 >
                   Home
                 </button>
@@ -157,7 +157,7 @@ const LandingPage: React.FC<{
                     onNavigate("about");
                     closeMenu();
                   }}
-                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-100 rounded-lg transition"
                 >
                   About
                 </button>
@@ -166,7 +166,7 @@ const LandingPage: React.FC<{
                     onNavigate("career");
                     closeMenu();
                   }}
-                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-100 rounded-lg transition"
                 >
                   Career
                 </button>
@@ -175,7 +175,7 @@ const LandingPage: React.FC<{
                     onNavigate("press");
                     closeMenu();
                   }}
-                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-100 rounded-lg transition"
                 >
                   Press
                 </button>
@@ -184,20 +184,20 @@ const LandingPage: React.FC<{
                     onNavigate("support");
                     closeMenu();
                   }}
-                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-100 rounded-lg transition"
                 >
                   Support
                 </button>
               </div>
 
               {/* Menu Footer with Get Started */}
-              <div className="p-6 border-t border-gray-200">
+              <div className="p-6 border-t border-red-200 bg-gradient-to-r from-red-600 to-red-500">
                 <button
                   onClick={() => {
                     onNavigate("user-app");
                     closeMenu();
                   }}
-                  className="w-full px-6 py-3 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition"
+                  className="w-full px-6 py-3 bg-white text-red-600 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg"
                 >
                   Get Started
                 </button>
