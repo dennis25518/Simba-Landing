@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ArrowRight,
   ShoppingCart,
@@ -10,6 +10,8 @@ import {
   Phone,
   Mail,
   MapPin,
+  Menu,
+  X,
 } from "lucide-react";
 import About from "./About";
 import Career from "./Career";
@@ -31,6 +33,10 @@ const LandingPage: React.FC<{
     | "merchant-app"
     | "driver-app";
 }> = ({ onNavigate, currentPage }) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMenu = () => setMobileMenuOpen(false);
+
   return (
     <div className="bg-white">
       {/* Navigation */}
@@ -44,6 +50,8 @@ const LandingPage: React.FC<{
                 className="w-40 h-13 object-contain"
               />
             </div>
+
+            {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => onNavigate("home")}
@@ -82,8 +90,107 @@ const LandingPage: React.FC<{
                 Get Started
               </button>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-black" />
+              ) : (
+                <Menu className="w-6 h-6 text-black" />
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Sliding Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden fixed inset-0 z-40">
+            {/* Overlay */}
+            <div
+              className="absolute inset-0 bg-black/50"
+              onClick={closeMenu}
+            ></div>
+
+            {/* Slide-in Menu from Right */}
+            <div
+              className="absolute right-0 top-0 h-full w-64 bg-white shadow-2xl transform transition-transform duration-300"
+              style={{ animation: "slideInRight 0.3s ease-out" }}
+            >
+              <style>{`
+                @keyframes slideInRight {
+                  from {
+                    transform: translateX(100%);
+                  }
+                  to {
+                    transform: translateX(0);
+                  }
+                }
+              `}</style>
+
+              <div className="p-6 space-y-4 pt-20">
+                <button
+                  onClick={() => {
+                    onNavigate("home");
+                    closeMenu();
+                  }}
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => {
+                    onNavigate("about");
+                    closeMenu();
+                  }}
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => {
+                    onNavigate("career");
+                    closeMenu();
+                  }}
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                >
+                  Career
+                </button>
+                <button
+                  onClick={() => {
+                    onNavigate("press");
+                    closeMenu();
+                  }}
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                >
+                  Press
+                </button>
+                <button
+                  onClick={() => {
+                    onNavigate("support");
+                    closeMenu();
+                  }}
+                  className="w-full text-left px-4 py-3 text-black font-bold hover:bg-red-50 rounded-lg transition"
+                >
+                  Support
+                </button>
+                <div className="pt-4 border-t border-gray-200">
+                  <button
+                    onClick={() => {
+                      onNavigate("user-app");
+                      closeMenu();
+                    }}
+                    className="w-full px-6 py-3 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Main Content - Conditionally Rendered */}
