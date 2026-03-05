@@ -234,13 +234,18 @@ const MerchantApp: React.FC = () => {
           <p className="text-xl mb-10 opacity-95">
             Join thousands of merchants already succeeding on SIMBA Express
           </p>
-          <a
-            href="https://merchant.simbaxp.vercel.app"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-green-600 font-bold rounded-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl text-lg"
+          <button
+            onClick={() =>
+              window.open(
+                "https://simba-merchant-app.vercel.app/dashboard",
+                "_blank",
+              )
+            }
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-green-600 font-bold rounded-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl text-lg cursor-pointer border-none"
           >
             Visit Merchant Website
             <ArrowRight size={24} />
-          </a>
+          </button>
         </div>
       </section>
     </div>
