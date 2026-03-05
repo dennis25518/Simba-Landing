@@ -104,7 +104,7 @@ const LandingPage: React.FC<{
                       </span>
                     </h1>
                     <p className="text-xl text-gray-600 leading-relaxed">
-                      SIMBA Express is a lightning-fast, commerce-first platform
+                      Simba Express is a lightning-fast, commerce-first platform
                       transforming how businesses and customers connect across
                       Africa. One platform. Infinite possibilities.
                     </p>
@@ -241,7 +241,7 @@ const LandingPage: React.FC<{
                   </span>
                 </h2>
                 <p className="text-lg  text-black-700 max-w-3xl mx-auto leading-relaxed font-heavy">
-                  Whether you're buying, selling, or delivering, Simba Exprss
+                  Whether you're buying, selling, or delivering, Simba Express
                   has you covered. We provide seamless, integrated commerce
                   experiences for every participant in the ecosystem.
                 </p>
@@ -402,7 +402,7 @@ const LandingPage: React.FC<{
                   </span>
                 </div>
                 <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
-                  Why SIMBA Leads
+                  Why Simba Leads
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
                     the Way
@@ -556,7 +556,7 @@ const LandingPage: React.FC<{
                 </h2>
                 <p className="text-xl text-black-700 mb-12 max-w-2xl mx-auto font-heavy leading-relaxed">
                   Join thousands of customers, merchants, and drivers already
-                  transforming commerce across Africa with SIMBA Express.
+                  transforming commerce across Africa with Simba Express.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                   <button
