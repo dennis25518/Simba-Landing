@@ -692,29 +692,21 @@ const LandingPage: React.FC<{
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                     <button
-                      onClick={() =>
-                        (window.location.href = "https://simbaxp.vercel.app")
-                      }
+                      onClick={() => onNavigate("customer-app")}
                       className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-blue-600/30 transition-all overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <span className="relative">Shop as Customer</span>
                     </button>
                     <button
-                      onClick={() =>
-                        (window.location.href =
-                          "https://merchant.simbaxp.vercel.app")
-                      }
+                      onClick={() => onNavigate("merchant-app")}
                       className="group relative px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-green-600/30 transition-all overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-green-700 to-green-800 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <span className="relative">Partner as Merchant</span>
                     </button>
                     <button
-                      onClick={() =>
-                        (window.location.href =
-                          "https://driver.simbaxp.vercel.app")
-                      }
+                      onClick={() => onNavigate("driver-app")}
                       className="group relative px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-orange-600/30 transition-all overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-orange-700 to-orange-800 opacity-0 group-hover:opacity-100 transition-opacity"></div>
