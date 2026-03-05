@@ -114,13 +114,10 @@ const About: React.FC = () => {
             Real-World Scenario
           </h2>
           <div className="space-y-6 text-gray-700 leading-relaxed">
-            <h3 className="text-2xl font-bold text-gray-900">
-              A Real-Life Story of SME Restocking Challenges in Tanzania
-            </h3>
-
+            
             <p className="text-lg text-justify">
               Asha owns a small retail shop in Buguruni, Dar es Salaam. Her shop
-              sells basic household goods—cooking oil, sugar, soap, rice, and
+              sells basic household goods cooking oil, sugar, soap, rice, and
               snacks. It is her only source of income and supports her family.
             </p>
 
@@ -133,7 +130,7 @@ const About: React.FC = () => {
               her shop for the day, and travel to Kariakoo. She carries cash
               because most suppliers do not accept digital payments. Sometimes
               she visits three or four different wholesalers to get everything
-              she needs—one for rice, another for cooking oil, another for soap.
+              she needs one for rice, another for cooking oil, another for soap.
             </p>
 
             <p className="text-lg text-justify">
@@ -162,8 +159,8 @@ const About: React.FC = () => {
             </p>
 
             <p className="text-lg text-justify">
-              Asha's experience is not unique. Across Dar es Salaam—in Temeke,
-              Ilala, Kinondoni, Kigamboni, and Ubungo—thousands of SMEs face the
+              Asha's experience is not unique. Across Dar es Salaam in Temeke,
+              Ilala, Kinondoni, Kigamboni, and Ubungo thousands of SMEs face the
               same struggle. The lack of a structured, reliable supply chain
               forces small businesses to operate inefficiently, limits their
               growth, and keeps them informal.
