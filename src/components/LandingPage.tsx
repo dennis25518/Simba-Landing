@@ -20,6 +20,9 @@ import Support from "./Support";
 import CustomerApp from "./CustomerApp";
 import MerchantApp from "./MerchantApp";
 import DriverApp from "./DriverApp";
+import PrivacyPolicy from "./PrivacyPolicy";
+import TermsOfService from "./TermsOfService";
+import CookiePolicy from "./CookiePolicy";
 
 const LandingPage: React.FC<{
   onNavigate: (path: string) => void;
@@ -31,7 +34,10 @@ const LandingPage: React.FC<{
     | "support"
     | "customer-app"
     | "merchant-app"
-    | "driver-app";
+    | "driver-app"
+    | "privacy-policy"
+    | "terms-of-service"
+    | "cookie-policy";
 }> = ({ onNavigate, currentPage }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -723,6 +729,9 @@ const LandingPage: React.FC<{
       {currentPage === "customer-app" && <CustomerApp />}
       {currentPage === "merchant-app" && <MerchantApp />}
       {currentPage === "driver-app" && <DriverApp />}
+      {currentPage === "privacy-policy" && <PrivacyPolicy />}
+      {currentPage === "terms-of-service" && <TermsOfService />}
+      {currentPage === "cookie-policy" && <CookiePolicy />}
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 border-t border-gray-800">
@@ -846,28 +855,28 @@ const LandingPage: React.FC<{
               </h4>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("privacy-policy")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Privacy Policy
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("terms-of-service")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Terms of Service
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("cookie-policy")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Cookie Policy
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -909,12 +918,18 @@ const LandingPage: React.FC<{
               &copy; 2026 Simba Express. All rights reserved.
             </p>
             <div className="flex gap-6 justify-center md:justify-end mt-6 md:mt-0 text-sm text-gray-500 font-semibold">
-              <a href="#" className="hover:text-red-500 transition-colors">
+              <button
+                onClick={() => onNavigate("privacy-policy")}
+                className="hover:text-red-500 transition-colors cursor-pointer bg-none border-none"
+              >
                 Privacy
-              </a>
-              <a href="#" className="hover:text-red-500 transition-colors">
+              </button>
+              <button
+                onClick={() => onNavigate("terms-of-service")}
+                className="hover:text-red-500 transition-colors cursor-pointer bg-none border-none"
+              >
                 Terms
-              </a>
+              </button>
               <a href="#" className="hover:text-red-500 transition-colors">
                 Sitemap
               </a>

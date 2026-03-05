@@ -11,6 +11,9 @@ function App() {
     | "customer-app"
     | "merchant-app"
     | "driver-app"
+    | "privacy-policy"
+    | "terms-of-service"
+    | "cookie-policy"
   >("home");
 
   const handleNavigate = (path: string) => {
@@ -23,6 +26,9 @@ function App() {
         "customer-app",
         "merchant-app",
         "driver-app",
+        "privacy-policy",
+        "terms-of-service",
+        "cookie-policy",
       ].includes(path)
     ) {
       setCurrentPage(path as any);
