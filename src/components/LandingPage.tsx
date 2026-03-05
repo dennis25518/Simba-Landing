@@ -734,7 +734,7 @@ const LandingPage: React.FC<{
       {currentPage === "privacy-policy" && <PrivacyPolicy />}
       {currentPage === "terms-of-service" && <TermsOfService />}
       {currentPage === "cookie-policy" && <CookiePolicy />}
-      {currentPage === "sitemap" && <Sitemap />}
+      {currentPage === "sitemap" && <Sitemap onNavigate={onNavigate} />}
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 border-t border-gray-800">
@@ -784,28 +784,28 @@ const LandingPage: React.FC<{
               </h4>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("customer-app")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Customer
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("merchant-app")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Merchant
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("driver-app")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Driver
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -817,12 +817,12 @@ const LandingPage: React.FC<{
               </h4>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("about")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     About Us
-                  </a>
+                  </button>
                 </li>
                 <li>
                   <a
@@ -833,20 +833,20 @@ const LandingPage: React.FC<{
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("career")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Careers
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold"
+                  <button
+                    onClick={() => onNavigate("press")}
+                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 font-semibold cursor-pointer bg-none border-none"
                   >
                     Press
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

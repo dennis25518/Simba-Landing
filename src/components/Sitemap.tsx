@@ -1,6 +1,10 @@
 import { Map } from "lucide-react";
 
-export default function Sitemap() {
+export default function Sitemap({
+  onNavigate,
+}: {
+  onNavigate: (path: string) => void;
+}) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -34,10 +38,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.scrollTo(0, 0);
-                    }}
+                    onClick={() => onNavigate("about")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     About Us
@@ -52,7 +53,7 @@ export default function Sitemap() {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("career")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Careers
@@ -60,7 +61,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("press")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Press
@@ -68,7 +69,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("support")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Support
@@ -85,7 +86,7 @@ export default function Sitemap() {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("customer-app")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Customer App
@@ -93,7 +94,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("merchant-app")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Merchant App
@@ -101,7 +102,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("driver-app")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Driver App
@@ -118,7 +119,7 @@ export default function Sitemap() {
               <ul className="space-y-3">
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("privacy-policy")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Privacy Policy
@@ -126,7 +127,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("terms-of-service")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Terms of Service
@@ -134,7 +135,7 @@ export default function Sitemap() {
                 </li>
                 <li>
                   <button
-                    onClick={() => {}}
+                    onClick={() => onNavigate("cookie-policy")}
                     className="text-red-600 hover:text-red-700 font-semibold transition-colors cursor-pointer bg-none border-none"
                   >
                     Cookie Policy
