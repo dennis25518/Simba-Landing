@@ -14,6 +14,7 @@ function App() {
     | "privacy-policy"
     | "terms-of-service"
     | "cookie-policy"
+    | "sitemap"
   >("home");
 
   const handleNavigate = (path: string) => {
@@ -29,6 +30,7 @@ function App() {
         "privacy-policy",
         "terms-of-service",
         "cookie-policy",
+        "sitemap",
       ].includes(path)
     ) {
       setCurrentPage(path as any);

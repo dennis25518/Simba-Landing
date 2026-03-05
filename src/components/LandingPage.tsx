@@ -23,6 +23,7 @@ import DriverApp from "./DriverApp";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsOfService from "./TermsOfService";
 import CookiePolicy from "./CookiePolicy";
+import Sitemap from "./Sitemap";
 
 const LandingPage: React.FC<{
   onNavigate: (path: string) => void;
@@ -37,7 +38,8 @@ const LandingPage: React.FC<{
     | "driver-app"
     | "privacy-policy"
     | "terms-of-service"
-    | "cookie-policy";
+    | "cookie-policy"
+    | "sitemap";
 }> = ({ onNavigate, currentPage }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -732,6 +734,7 @@ const LandingPage: React.FC<{
       {currentPage === "privacy-policy" && <PrivacyPolicy />}
       {currentPage === "terms-of-service" && <TermsOfService />}
       {currentPage === "cookie-policy" && <CookiePolicy />}
+      {currentPage === "sitemap" && <Sitemap />}
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-gray-400 py-16 border-t border-gray-800">
@@ -930,9 +933,12 @@ const LandingPage: React.FC<{
               >
                 Terms
               </button>
-              <a href="#" className="hover:text-red-500 transition-colors">
+              <button
+                onClick={() => onNavigate("sitemap")}
+                className="hover:text-red-500 transition-colors cursor-pointer bg-none border-none"
+              >
                 Sitemap
-              </a>
+              </button>
             </div>
           </div>
         </div>
