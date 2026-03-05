@@ -118,17 +118,17 @@ const About: React.FC = () => {
               A Real-Life Story of SME Restocking Challenges in Tanzania
             </h3>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               Asha owns a small retail shop in Buguruni, Dar es Salaam. Her shop
               sells basic household goods—cooking oil, sugar, soap, rice, and
               snacks. It is her only source of income and supports her family.
             </p>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               Every week, Asha faces the same problem: restocking.
             </p>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               To restock her shop, she must wake up as early as 4:30 a.m., close
               her shop for the day, and travel to Kariakoo. She carries cash
               because most suppliers do not accept digital payments. Sometimes
@@ -136,32 +136,32 @@ const About: React.FC = () => {
               she needs—one for rice, another for cooking oil, another for soap.
             </p>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               Transport costs keep rising. Daladala fares add up, and when she
               buys in bulk, she must hire a boda boda or a small truck to bring
               the goods back. On many days, traffic delays mean she returns late
               in the evening.
             </p>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               While Asha is away, her shop is closed. Customers come, find the
               door locked, and leave. Some never return. She loses sales, not
               because demand is low, but because she cannot be in two places at
               once.
             </p>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               Sometimes, after all the effort, she finds that certain items are
               out of stock or prices have changed unexpectedly. With no price
               transparency or guaranteed supply, planning is difficult. She
               often restocks less than she needs, fearing losses.
             </p>
 
-            <p className="text-lg font-semibold text-red-600">
+            <p className="text-lg font-semibold text-red-600 text-justify">
               This cycle repeats every week.
             </p>
 
-            <p className="text-lg">
+            <p className="text-lg text-justify">
               Asha's experience is not unique. Across Dar es Salaam—in Temeke,
               Ilala, Kinondoni, Kigamboni, and Ubungo—thousands of SMEs face the
               same struggle. The lack of a structured, reliable supply chain
@@ -169,7 +169,7 @@ const About: React.FC = () => {
               growth, and keeps them informal.
             </p>
 
-            <p className="text-lg font-semibold text-gray-900">
+            <p className="text-lg font-semibold text-gray-900 text-justify">
               This is the problem Simba Express was built to solve.
             </p>
           </div>
