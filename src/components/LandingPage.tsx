@@ -40,7 +40,7 @@ const LandingPage: React.FC<{
             <div className="flex items-center">
               <img
                 src="/simba-logo.png"
-                alt="SIMBA"
+                alt="Simba Express"
                 className="w-40 h-13 object-contain"
               />
             </div>
@@ -175,7 +175,7 @@ const LandingPage: React.FC<{
                   <div className="absolute inset-0 rounded-3xl flex items-center justify-center overflow-hidden">
                     <img
                       src="/hero.jpg"
-                      alt="SIMBA"
+                      alt="Simba Express"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -613,7 +613,7 @@ const LandingPage: React.FC<{
               <div className="flex items-center mb-4">
                 <img
                   src="/simba-logo.png"
-                  alt="SIMBA"
+                  alt="Simba Express"
                   className="w-16 h-16 object-contain"
                 />
               </div>
@@ -785,7 +785,7 @@ const LandingPage: React.FC<{
           {/* Bottom Footer */}
           <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between">
             <p className="text-sm text-gray-500 text-center md:text-left font-semibold">
-              &copy; 2026 SIMBA Express. All rights reserved.
+              &copy; 2026 Simba Express. All rights reserved.
             </p>
             <div className="flex gap-6 justify-center md:justify-end mt-6 md:mt-0 text-sm text-gray-500 font-semibold">
               <a href="#" className="hover:text-red-500 transition-colors">

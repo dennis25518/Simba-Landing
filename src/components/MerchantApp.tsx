@@ -23,7 +23,7 @@ const MerchantApp: React.FC = () => {
             Grow Your Business with
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
-              SIMBA Merchant
+              Simba Express Merchant
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -46,7 +46,7 @@ const MerchantApp: React.FC = () => {
                 icon: <Users className="w-8 h-8" />,
                 title: "10K+ Customers",
                 description:
-                  "Reach thousands of verified customers actively shopping on SIMBA",
+                  "Reach thousands of verified customers actively shopping on Simba Express",
               },
               {
                 icon: <Zap className="w-8 h-8" />,
@@ -76,7 +76,7 @@ const MerchantApp: React.FC = () => {
                 icon: <Globe className="w-8 h-8" />,
                 title: "Multi-City Expansion",
                 description:
-                  "Expand your business across multiple cities with SIMBA",
+                  "Expand your business across multiple cities with Simba Express",
               },
             ].map((benefit, idx) => (
               <div
