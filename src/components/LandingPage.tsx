@@ -107,16 +107,16 @@ const LandingPage: React.FC<{
 
         {/* Mobile Sliding Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 z-40">
+          <>
             {/* Overlay */}
             <div
-              className="absolute inset-0 bg-black/50"
+              className="md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity"
               onClick={closeMenu}
             ></div>
 
             {/* Slide-in Menu from Right */}
             <div
-              className="absolute right-0 top-0 h-full w-64 bg-white shadow-2xl transform transition-transform duration-300"
+              className="md:hidden fixed right-0 top-0 h-full w-72 bg-white shadow-2xl z-50 flex flex-col transform transition-transform duration-300"
               style={{ animation: "slideInRight 0.3s ease-out" }}
             >
               <style>{`
@@ -130,7 +130,19 @@ const LandingPage: React.FC<{
                 }
               `}</style>
 
-              <div className="p-6 space-y-4 pt-20">
+              {/* Menu Header with Close Button */}
+              <div className="flex items-center justify-between p-4 border-b border-gray-200">
+                <h2 className="text-xl font-bold text-gray-900">Menu</h2>
+                <button
+                  onClick={closeMenu}
+                  className="p-2 hover:bg-gray-100 rounded-lg transition"
+                >
+                  <X className="w-6 h-6 text-black" />
+                </button>
+              </div>
+
+              {/* Menu Items */}
+              <div className="flex-1 overflow-y-auto p-6 space-y-2">
                 <button
                   onClick={() => {
                     onNavigate("home");
@@ -176,20 +188,22 @@ const LandingPage: React.FC<{
                 >
                   Support
                 </button>
-                <div className="pt-4 border-t border-gray-200">
-                  <button
-                    onClick={() => {
-                      onNavigate("user-app");
-                      closeMenu();
-                    }}
-                    className="w-full px-6 py-3 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition"
-                  >
-                    Get Started
-                  </button>
-                </div>
+              </div>
+
+              {/* Menu Footer with Get Started */}
+              <div className="p-6 border-t border-gray-200">
+                <button
+                  onClick={() => {
+                    onNavigate("user-app");
+                    closeMenu();
+                  }}
+                  className="w-full px-6 py-3 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition"
+                >
+                  Get Started
+                </button>
               </div>
             </div>
-          </div>
+          </>
         )}
       </nav>
 
