@@ -37,7 +37,7 @@ const CustomerApp: React.FC = () => {
       <section className="w-full bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-            Hundreds of <span className="text-red-600">products</span>
+            Hundreds of <span className="text-blue-600">products</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Replacing daily orders to many suppliers with a single order placed
@@ -72,13 +72,19 @@ const CustomerApp: React.FC = () => {
               flex-shrink: 0;
               width: 140px;
             }
-            .marquee-product img {
+            .marquee-circle {
               height: 140px;
               width: 140px;
-              object-fit: contain;
+              border-radius: 9999px;
               background: #f9fafb;
-              padding: 1rem;
-              border-radius: 0.5rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .marquee-circle img {
+              height: 100px;
+              width: 100px;
+              object-fit: contain;
             }
             .marquee-product span {
               font-weight: 700;
@@ -91,68 +97,100 @@ const CustomerApp: React.FC = () => {
 
           <div className="marquee">
             <div className="marquee-product">
-              <img src="/Uf_glass_mango.png" alt="Mango Juice" />
+              <div className="marquee-circle">
+                <img src="/Uf_glass_mango.png" alt="Mango Juice" />
+              </div>
               <span>MANGO JUICE</span>
             </div>
             <div className="marquee-product">
-              <img src="/bwanasukari-removebg.png" alt="Bwana Sukari" />
+              <div className="marquee-circle">
+                <img src="/bwanasukari-removebg.png" alt="Bwana Sukari" />
+              </div>
               <span>BWANA SUKARI</span>
             </div>
             <div className="marquee-product">
-              <img src="/Energy%20Can.png" alt="Energy Can" />
+              <div className="marquee-circle">
+                <img src="/Energy%20Can.png" alt="Energy Can" />
+              </div>
               <span>ENERGY CAN</span>
             </div>
             <div className="marquee-product">
-              <img src="/Fursana.png" alt="Fursana" />
+              <div className="marquee-circle">
+                <img src="/Fursana.png" alt="Fursana" />
+              </div>
               <span>FURSANA</span>
             </div>
             <div className="marquee-product">
-              <img src="/guava.png" alt="Guava Juice" />
+              <div className="marquee-circle">
+                <img src="/guava.png" alt="Guava Juice" />
+              </div>
               <span>GUAVA JUICE</span>
             </div>
             <div className="marquee-product">
-              <img src="/Juicy%20fruty.png" alt="Juicy Fruity" />
+              <div className="marquee-circle">
+                <img src="/Juicy%20fruty.png" alt="Juicy Fruity" />
+              </div>
               <span>JUICY FRUITY</span>
             </div>
             <div className="marquee-product">
-              <img src="/kisima%20water.png" alt="Kisima Water" />
+              <div className="marquee-circle">
+                <img src="/kisima%20water.png" alt="Kisima Water" />
+              </div>
               <span>KISIMA WATER</span>
             </div>
             <div className="marquee-product">
-              <img src="/Punch%20Can.png" alt="Punch" />
+              <div className="marquee-circle">
+                <img src="/Punch%20Can.png" alt="Punch" />
+              </div>
               <span>PUNCH</span>
             </div>
 
             <div className="marquee-product">
-              <img src="/Uf_glass_mango.png" alt="Mango Juice" />
+              <div className="marquee-circle">
+                <img src="/Uf_glass_mango.png" alt="Mango Juice" />
+              </div>
               <span>MANGO JUICE</span>
             </div>
             <div className="marquee-product">
-              <img src="/bwanasukari-removebg.png" alt="Bwana Sukari" />
+              <div className="marquee-circle">
+                <img src="/bwanasukari-removebg.png" alt="Bwana Sukari" />
+              </div>
               <span>BWANA SUKARI</span>
             </div>
             <div className="marquee-product">
-              <img src="/Energy%20Can.png" alt="Energy Can" />
+              <div className="marquee-circle">
+                <img src="/Energy%20Can.png" alt="Energy Can" />
+              </div>
               <span>ENERGY CAN</span>
             </div>
             <div className="marquee-product">
-              <img src="/Fursana.png" alt="Fursana" />
+              <div className="marquee-circle">
+                <img src="/Fursana.png" alt="Fursana" />
+              </div>
               <span>FURSANA</span>
             </div>
             <div className="marquee-product">
-              <img src="/guava.png" alt="Guava Juice" />
+              <div className="marquee-circle">
+                <img src="/guava.png" alt="Guava Juice" />
+              </div>
               <span>GUAVA JUICE</span>
             </div>
             <div className="marquee-product">
-              <img src="/Juicy%20fruty.png" alt="Juicy Fruity" />
+              <div className="marquee-circle">
+                <img src="/Juicy%20fruty.png" alt="Juicy Fruity" />
+              </div>
               <span>JUICY FRUITY</span>
             </div>
             <div className="marquee-product">
-              <img src="/kisima%20water.png" alt="Kisima Water" />
+              <div className="marquee-circle">
+                <img src="/kisima%20water.png" alt="Kisima Water" />
+              </div>
               <span>KISIMA WATER</span>
             </div>
             <div className="marquee-product">
-              <img src="/Punch%20Can.png" alt="Punch" />
+              <div className="marquee-circle">
+                <img src="/Punch%20Can.png" alt="Punch" />
+              </div>
               <span>PUNCH</span>
             </div>
           </div>
