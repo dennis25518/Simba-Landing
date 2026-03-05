@@ -107,34 +107,70 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Real-World Scenario */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-black text-center text-gray-900 mb-12">
-            Our Story
+            Real-World Scenario
           </h2>
-          <div className="space-y-8 text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-gray-700 leading-relaxed">
+            <h3 className="text-2xl font-bold text-gray-900">
+              A Real-Life Story of SME Restocking Challenges in Tanzania
+            </h3>
+
             <p className="text-lg">
-              SIMBA Express was founded with a simple observation: Africa's
-              e-commerce potential is immense, but the infrastructure to unlock
-              it doesn't exist. Traditional logistics and commerce platforms
-              were built for different markets, with different challenges.
+              Asha owns a small retail shop in Buguruni, Dar es Salaam. Her shop
+              sells basic household goods—cooking oil, sugar, soap, rice, and
+              snacks. It is her only source of income and supports her family.
             </p>
+
             <p className="text-lg">
-              We recognized an opportunity to build something native to Africa,
-              designed from the ground up for our unique market dynamics:
-              diverse geographies, varied payment preferences, and an incredible
-              entrepreneurial spirit.
+              Every week, Asha faces the same problem: restocking.
             </p>
+
             <p className="text-lg">
-              Today, SIMBA Express connects three critical ecosystem players—
-              customers seeking convenience, merchants seeking growth, and
-              drivers seeking flexibility— through a unified, seamless platform.
+              To restock her shop, she must wake up as early as 4:30 a.m., close
+              her shop for the day, and travel to Kariakoo. She carries cash
+              because most suppliers do not accept digital payments. Sometimes
+              she visits three or four different wholesalers to get everything
+              she needs—one for rice, another for cooking oil, another for soap.
             </p>
+
             <p className="text-lg">
-              With operations starting in Tanzania and expanding across East
-              Africa, we're just getting started on our mission to transform
-              continental commerce.
+              Transport costs keep rising. Daladala fares add up, and when she
+              buys in bulk, she must hire a boda boda or a small truck to bring
+              the goods back. On many days, traffic delays mean she returns late
+              in the evening.
+            </p>
+
+            <p className="text-lg">
+              While Asha is away, her shop is closed. Customers come, find the
+              door locked, and leave. Some never return. She loses sales, not
+              because demand is low, but because she cannot be in two places at
+              once.
+            </p>
+
+            <p className="text-lg">
+              Sometimes, after all the effort, she finds that certain items are
+              out of stock or prices have changed unexpectedly. With no price
+              transparency or guaranteed supply, planning is difficult. She
+              often restocks less than she needs, fearing losses.
+            </p>
+
+            <p className="text-lg font-semibold text-red-600">
+              This cycle repeats every week.
+            </p>
+
+            <p className="text-lg">
+              Asha's experience is not unique. Across Dar es Salaam—in Temeke,
+              Ilala, Kinondoni, Kigamboni, and Ubungo—thousands of SMEs face the
+              same struggle. The lack of a structured, reliable supply chain
+              forces small businesses to operate inefficiently, limits their
+              growth, and keeps them informal.
+            </p>
+
+            <p className="text-lg font-semibold text-gray-900">
+              This is the problem Simba Express was built to solve.
             </p>
           </div>
         </div>
